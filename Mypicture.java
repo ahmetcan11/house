@@ -24,7 +24,7 @@ public class Mypicture
         window = new Square();
         roof = new Triangle();  
         sun = new Circle();
-        
+        tree = new Square();
         drawn = false;
     }
 public void draw()
@@ -47,6 +47,11 @@ public void draw()
             roof.moveVertical(-60);
             roof.makeVisible();
             
+            tree.changeSize(100);
+            tree.moveHorizontal(-40);
+            tree.moveVertical(60);
+            tree.makeVisible();
+    
             sun.changeColor("red");
             sun.moveHorizontal(50);
             sun.moveVertical(-40);
